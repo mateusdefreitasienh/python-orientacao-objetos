@@ -4,4 +4,6 @@ from carro import Carro
 # Instancia o objeto Carro
 uno = Carro("Fiat", "Uno", 1994)
 
+uno.acelerar()
+uno.frear()
 uno.set_placa("III-AAAA")
