@@ -45,3 +45,11 @@ class Carro:
     def set_placa(self, nova_placa):
         self.placa = nova_placa
         print(f"Placa atualizada para {self.placa}")
+
+    def __str__(self):
+        """
+        Método padrão que, ao chamar o objeto, retorna o que está abaixo
+        """
+        return f"{self.marca} | {self.modelo} | {self.placa} | {self.ano}"
+    
+    
