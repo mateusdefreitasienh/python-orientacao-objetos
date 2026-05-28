@@ -96,4 +96,12 @@ def menu_principal():
 opcao = ""
 
 while True:
-    menu_principal()
+    if len(frotas) == 0:
+        print("Nenhuma frota para gerenciar, cadastre uma para continuar")
+        nome = input("Digite o nome da empresa: ")
+        cnpj = input("Digite o CNPJ da empresa: ")
+        nova_frota = GerenciadorFrotas(nome, cnpj)
+        frotas.append(nova_frota)
+        nova_frota.listar()
+    else:        
+        menu_principal()
