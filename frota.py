@@ -1,4 +1,4 @@
-class Frota:
+class Frotas:
     """
     Implementa o gerenciamento de uma frota de carros
     """
@@ -25,3 +25,11 @@ class Frota:
 
         for carro in self.carros:
             print(carro)
+
+    def __str__(self):
+        """
+        Mostra resumo da frota
+        """
+        msg = f"{self.nome} | {self.empresa} | {self.cnpj} | "
+        msg += f"{len(self.carros)} carro(s)"
+        return msg
