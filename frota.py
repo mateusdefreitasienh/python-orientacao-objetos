@@ -1,4 +1,4 @@
-class Frotas:
+class Frota:
     """
     Implementa o gerenciamento de uma frota de carros
     """

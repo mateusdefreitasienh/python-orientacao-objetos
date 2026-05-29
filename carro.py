@@ -1,4 +1,4 @@
-class Carros:
+class Carro:
     """
     Implementa o funcionamento de um carro
     """
